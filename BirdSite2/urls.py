@@ -16,8 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
+#says what the extension in the url bar is, and directs to the appropriate
+#app specific urls page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("Home.urls")),
     path("blog/", include("blog.urls")),
+    path("Testamonials/", include("Testamonials.urls")),
+    path("Services_Offered/", include("Services_Offered.urls")),
+    path("Background/", include("Background.urls")),
 ]

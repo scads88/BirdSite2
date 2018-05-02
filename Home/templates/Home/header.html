@@ -5,10 +5,10 @@
 <head>
 	<title>Andrew Fitness Website</title>
 	<meta charset="utf-8" />
-	{% load staticfiles %}
+	{% load static %}
 	<link rel="stylesheet" href="{% static 'Home/css/bootstrap.min.css' %}" type = "text/css"/>
-	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
-	
+	<meta name="viewport" content = "width=device-width, initial-scale=2.0">
+	<link rel="stylesheet" href="{% static 'Home/style.css' %}" type = "text/css"/>
 	<style type="text/css">
 		html,
 		body {
@@ -18,16 +18,19 @@
 </head>
 
 <body class="body" style="background-color:#f6f6f6">
-	<div class="container-fluid" style="min-height:95%; ">
+	<div class="container-fluid" style="min-height:150%; ">
 		<div class="row">
-			  <div class="col-sm-2">
+			  <div class="col-md-8">
 				  <br>
 				  <center>
 					<img src="{% static 'Home/img/Legendary.PNG' %}" class="responsive-img" style='max-height:200px;' alt="face"> 			
-					<img src="{% static 'Home/img/Legendary.PNG' %}" class="responsive-img" style='max-height:200px;' alt="face">
+					
 
 					
 				  </center>
+				  <right>  
+				  <img src="{% static 'Home/img/Legendary.PNG' %}" class="responsive-img" width="500" height="300" top="135px" left="200px"  alt="face">
+				  </right>
 			  </div>
 			  <div class="col-sm-10">
 				  <br>
@@ -46,10 +49,10 @@
 			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
 			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
 			  <ul class="nav nav-pills nav-stacked">
-				<li><a href='/'> Background </a></li>
+				<li><a href='/Background/'> Background </a></li>
 				<li><a href='/blog/'> Blog </a></li>
 				<li><a href='/contact/'> Services_Offered </a></li>
-				<li><a href="/Testamonials/"> Testamonials</a></li>
+				<li><a href=/Testamonials/> Testamonials</a></li>
 			  </ul>
 			</div> <!--well bs-sidebar affix-->
 		  </div> <!--col-sm-2-->
