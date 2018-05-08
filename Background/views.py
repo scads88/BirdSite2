@@ -6,7 +6,7 @@ from django.shortcuts import render
 #either a fuction or class based view (use of render is class based)
 
 def index(request):
-    render(request, "Background/home.html")
+    return render(request, "Background/home.html")
 
 
 #this will now send you to the templates folder for the app 
