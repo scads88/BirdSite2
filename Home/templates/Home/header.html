@@ -8,56 +8,33 @@
 	{% load static %}
 	<link rel="stylesheet" href="{% static 'Home/css/bootstrap.min.css' %}" type = "text/css"/>
 	<meta name="viewport" content = "width=device-width, initial-scale=2.0">
-	<link rel="stylesheet" href="{% static 'Home/style.css' %}" type = "text/css"/>
-	<style type="text/css">
-		html,
-		body {
-		  height:100%
-		}
-	</style>
 </head>
 
 <body class="body" style="background-color:#f6f6f6">
 	<div class="container-fluid" style="min-height:150%; ">
 		<div class="row">
-			  <div class="col-md-8">
-				  <br>
-				  <center>
-					<img src="{% static 'Home/img/Legendary.PNG' %}" class="responsive-img" style='max-height:200px;' alt="face"> 			
-					
+			  <div class="col-md-11">
 
-					
 				  </center>
-				  <right>  
-				  <img src="{% static 'Home/img/Legendary.PNG' %}" class="responsive-img" width="500" height="300" top="135px" left="200px"  alt="face">
-				  </right>
+				  <div>
+				  <img src="{% static 'Home/img/Legendary.PNG' %}" class="responsive-img" width="200" height="300" top="135px" left="500px"  alt="face">
+				  <img src="{% static 'Home/img/Andrew7.PNG' %}" class="responsive-img" width="200" height="300" top="135px" left="500px"  alt="face">
+			  	  <img src="{% static 'Home/img/Andrew9.PNG' %}" class="responsive-img" width="200" height="300" top="135px" left="500px"  alt="face">
+				  <img src="{% static 'Home/img/Andrew8.PNG' %}" class="responsive-img" width="200" height="300" top="135px" left="500px"  alt="face">
+				  <img src="{% static 'Home/img/Andrew11.PNG' %}" class="responsive-img" width="200" height="300" top="135px" left="500px"  alt="face">
+
+				  </div>
 			  </div>
 			  <div class="col-sm-10">
 				  <br>
 				  <center>
-				  <h3>Fitness at its Finest</h3>
+				  <h1>Fitness at its Finest</h1>
 				  </center>
-			  </div>
-		</div><hr>
+				  				<div class='container-fluid'>	
 
-		<div class="row">
-		
+<div class="nav3" style="height:150px;">
 
-		  <br>
-<!--REMOVED the Div class column feature that was here before->
-
-
-		  <br>
-
-		   <!-- Great, til you resize. -->
-			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
-			
-				<div class='container-fluid'>	
-				<div class="row">
-			  <div class="col-md-11">	
-			<div class="nav" id="sidebar" style="background-color:#fff">
-<center>
-			  <ul class="nav">
+    			  <ul class="nav">
 	  <a class="nav-item nav-link active" href="/Home/">Home </a>
       <a class="nav-item nav-link" href="/Background/">Andrew's Background</a>
       <a class="nav-item nav-link" href="/Testamonials/">Customer Testamonials</a>
@@ -66,19 +43,26 @@
       <a class="nav-item nav-link" href="#"> </a>
       <a class="nav-item nav-link" href="#"> </a>
       <a class="nav-item nav-link" href="#"> </a>
+
 			  </ul>
-			</div> <!--well bs-sidebar affix-->
+    <a href="#" class="icons"><img src="{% static 'Home/img/Andrew10.PNG' %}"></a>
+</div>		
+		
+		<hr>
 
-</div>
-</div>
-</div>
+		<div class="row">
+		
 
+			
+<!--
+<img src="{% static 'Home/img/Andrew4.PNG' %}" class="responsive-img" width="500" height="300" top="135px" left="200px"  alt="face">
+-->
 		  <div class="col-sm-10">
-		  
+		  <font color="red">
 			<div class='container-fluid'>
-			<br><br>
 			   {% block content %}
 			   {% endblock %}	
+		  </font>
 			</div>
 		  </div>
 		</div> 

@@ -24,6 +24,6 @@ urlpatterns = [
     path("", include("Home.urls")),
     path("blog/", include("blog.urls")),
     path("", include("Testamonials.urls")),
-    path("Services_Offered/", include("Services_Offered.urls")),
+    path("", include("Services_Offered.urls")),
     path("", include("Background.urls")),
 ]
